@@ -5,18 +5,29 @@
  <meta charset="utf-8" />
  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
-<div>
+<div class="site">
+    <header class="site-header">
+        <h1>The tale of Jesus Christ</h1>
+        <div class="header-actions">
+            <button id="theme-toggle" aria-pressed="false">Toggle theme</button>
+            <a class="back-top" href="#top">Top</a>
+        </div>
+    </header>
+    <main class="container">
 
+    <a id="top"></a>
 
-    <h1>The tale of Jesus Christ</h1>
+    <h2>A few facts about our Lord and personal Saviour Jesus Christ</h2>
 
     <h2>A few fact about our lord and personal saviour Jesus Christ</h2>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/800px-Bloch-SermonOnTheMount.jpg" width="350" />
+    <img class="hero" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/800px-Bloch-SermonOnTheMount.jpg" alt="Sermon on the Mount painting" />
     <p> Jesus of Nazareth,
          was a 1st-century Jewish preacher and religious leader.
          He is the central figure of Christianity, the world's largest religion.Jesus is the incarnation of God the Son an awaited messiah,
@@ -76,17 +87,22 @@
 
         <p>Want to know more...!!</p>
 
-        <form action="https://en.wikipedia.org/wiki/Jesus" />
-
-            <input type="submit" value="click here" />
-
+        <form class="learn-more" action="https://en.wikipedia.org/wiki/Jesus" method="get" target="_blank">
+            <input type="submit" value="Learn more on Wikipedia" />
         </form>
 
 
-        <iframe align="right" width="560" height="315" src="https://www.youtube.com/embed/2mgUPt2KI08?si=3UCmSGQUZL7pwxZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2mgUPt2KI08?si=3UCmSGQUZL7pwxZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
-        <h2>Thanks For Veiwing This Page.</h2>
+        <h2 class="thanks">Thanks for viewing this page.</h2>
 
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> — Created with care.</p>
+    </footer>
 
 </div>
 </body>

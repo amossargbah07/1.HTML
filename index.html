@@ -5,164 +5,68 @@
  <meta charset="utf-8" />
  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
-<div>
+<div class="site">
 
-  <h1>My heading</h1>
-    <a name="top" />
+  <header class="site-header">
+    <h1>My heading</h1>
+    <a id="top"></a>
+  </header>
 
-    <form>
-   
-       <input type="email" placeholder="search here..." name="email" />
+  <main class="container">
 
-       <br /><br />
-
-       <textarea name="textarea"></textarea>
-
-       <br /><br />
-
-       <select>
-        <option>Select an option...</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-       </select>
-
-       <br /><br />
-
-       <input type="radio" name="colour"/> blue
-       <input type="radio" name="colour"/> yellow
-       <input type="radio" name="colour"/> purple
-
-       <br /><br />
-
-       <input type="Checkbox" name="dog" value="1">dog
-       <input type="Checkbox" />Cat
-       <input type="Checkbox" />Pig
-
-         <br /><br />
-
-         <input type="submit" value="Press me!" />
-
-   </form>
+    <p>Welcome — some example form controls below (cleaned up for clarity):</p>
 
     <form>
-   
-       <input type="email" placeholder="search here..." name="email" />
+      <label>
+        Email
+        <input type="email" placeholder="you@example.com" name="email" />
+      </label>
 
-       <br /><br />
+      <label>
+        Message
+        <textarea name="message" rows="4"></textarea>
+      </label>
 
-       <textarea name="textarea"></textarea>
+      <label>
+        Choose
+        <select>
+          <option>Select an option...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </label>
 
-       <br /><br />
+      <div class="radios">
+        <label><input type="radio" name="colour" value="blue"/> blue</label>
+        <label><input type="radio" name="colour" value="yellow"/> yellow</label>
+        <label><input type="radio" name="colour" value="purple"/> purple</label>
+      </div>
 
-       <select>
-        <option>Select an option...</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-       </select>
+      <div class="checkboxes">
+        <label><input type="checkbox" name="dog" value="1"/> dog</label>
+        <label><input type="checkbox" name="cat"/> Cat</label>
+        <label><input type="checkbox" name="pig"/> Pig</label>
+      </div>
 
-       <br /><br />
+      <p><input type="submit" value="Press me!" /></p>
+    </form>
 
-       <input type="radio" name="colour"/> blue
-       <input type="radio" name="colour"/> yellow
-       <input type="radio" name="colour"/> purple
+    <p><a href="https://www.google.com" target="_blank" rel="noopener">Google</a></p>
+    <p><a href="helloworld!.html">Hello world</a></p>
+    <p><a href="#top">Back to top</a></p>
 
-       <br /><br />
+  </main>
 
-       <input type="Checkbox" name="dog" value="1">dog
-       <input type="Checkbox" />Cat
-       <input type="Checkbox" />Pig
-
-         <br /><br />
-
-         <input type="submit" value="Press me!" />
-
-   </form>
-
-    <form>
-   
-       <input type="email" placeholder="search here..." name="email" />
-
-       <br /><br />
-
-       <textarea name="textarea"></textarea>
-
-       <br /><br />
-
-       <select>
-        <option>Select an option...</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-       </select>
-
-       <br /><br />
-
-       <input type="radio" name="colour"/> blue
-       <input type="radio" name="colour"/> yellow
-       <input type="radio" name="colour"/> purple
-
-       <br /><br />
-
-       <input type="Checkbox" name="dog" value="1">dog
-       <input type="Checkbox" />Cat
-       <input type="Checkbox" />Pig
-
-         <br /><br />
-
-         <input type="submit" value="Press me!" />
-
-   </form>
-
-
-   <form>
-   
-       <input type="email" placeholder="search here..." name="email" />
-
-       <br /><br />
-
-       <textarea name="textarea"></textarea>
-
-       <br /><br />
-
-       <select>
-        <option>Select an option...</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-       </select>
-
-       <br /><br />
-
-       <input type="radio" name="colour"/> blue
-       <input type="radio" name="colour"/> yellow
-       <input type="radio" name="colour"/> purple
-
-       <br /><br />
-
-       <input type="Checkbox" name="dog" value="1">dog
-       <input type="Checkbox" />Cat
-       <input type="Checkbox" />Pig
-
-         <br /><br />
-
-         <input type="submit" value="Press me!" />
-
-   </form>
-
-   <p><a href="https://www.google.com">google</a></p>
-
-   <p><a href="helloworld!.html">Hello world</a></p>
-
-   <p><a href="#top">Back to top</a></p>
-
-
-   
+  <footer class="site-footer">
+    <p>© <span id="year"></span> — My first webpage</p>
+  </footer>
 
 </div>
 </body>
